@@ -1,29 +1,36 @@
 
 // Student grade
-let grade = prompt();
 
+let studentsName = ["Marta","Thomas","Klaus","Maria","David"]
+let studentsGrade = [76,85,65,93,81];
+
+let result = studentsGrade.reduce((prev,cur)=>{
+     return prev + cur;
+});
+console.log(result);
+let avg = result / studentsName.length;
 let studentGrade;
-if(grade < 60){
-    studentGrade = `The class average is ${grade}, the average grade will be F`;
+if(avg < 60){
+    studentGrade = `The class average is ${avg}, the average grade will be F`;
 }
-else if(grade < 70){
-    studentGrade = `The class average is ${grade}, the average grade will be D`;
+else if(avg < 70){
+    studentGrade = `The class average is ${avg}, the average grade will be D`;
 
 }
-else if(grade < 80){
-    studentGrade = `The class average is ${grade}, the average grade will be C`;
+else if(avg < 80){
+    studentGrade = `The class average is ${avg}, the average grade will be C`;
 
 }
-else if(grade < 90){
-    studentGrade = `T99he class average is ${grade}, the average grade will be B`;
+else if(avg < 90){
+    studentGrade = `The class average is ${avg}, the average grade will be B`;
 
 }
 else{
-    studentGrade = `The class average is ${grade}, the average grade will be A`;
+    studentGrade = `The class average is ${avg}, the average grade will be A`;
 
 }
-85
-console.log(alert(studentGrade));
+
+document.write(studentGrade +'<br/>');
 
 
 
