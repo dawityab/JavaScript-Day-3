@@ -7,3 +7,11 @@ console.log(`The temperature is ${temp}`);
  else{
  console.log("The weather is moderate");
  }
+// The Highet value in an array
+
+let numberValue = [1,7-3,9];
+console.log(Math.max(1,7,-3,9));
+
+// Or with spread operator
+let numberValue1 = [1,7,-3,9];
+console.log(Math.max(...numberValue1));
