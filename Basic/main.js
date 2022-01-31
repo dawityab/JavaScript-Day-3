@@ -1,4 +1,4 @@
-
+// Temperature v1.0
 let temp = Math.floor(Math.random() * 25) + -5;
 
 console.log(`The temperature is ${temp}`);
