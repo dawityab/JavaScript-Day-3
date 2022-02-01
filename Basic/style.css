@@ -1,0 +1,9 @@
+html{
+    background: linear-gradient(#f5efef, #4e5be4);
+
+    
+}
+#weatherText{
+    color: rgb(73, 67, 40);
+    font-size: 2em;
+}
