@@ -14,13 +14,42 @@
         .termo {
             text-align: center;
             width: 400px;
-            height: 400px;
-            background-color: black;
+            height: 500px;
+            background-color: rgb(55, 145, 219);
         }
 
         .show {
             color: white;
             font-size: 20px;
+        }
+
+        .result {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 50px; 
+        }
+
+        .fas {
+            font-size: 40px;
+            color: gold;
+            text-shadow: gray 2px 2px 2px;
+            margin-right: 20px;
+        }
+
+        #degree {
+            font-size: 45px;
+            font-weight: bold;
+            margin-right: 60px;
+        }
+
+        .info {
+            color: black;
+            font-size: 10px;
+        }
+
+        .margin {
+            margin-top: 20px;
         }
 
     </style>
@@ -29,10 +58,22 @@
     <div class="container">
         <div class="termo">
             <div class="show">
-                <h1>Today's wheather!</h1>
+                <h1>Today's weather!</h1>
+                <hr>
+                <div class="result">
+                    <i class="fas fa-cloud-sun"></i>
+                    <h2 id="degree"></h2>
+                </div>
+                <div class="margin"> 
+                    <div class="margin">
+                        <img id="imgWeather" src="" alt="">
+                    </div>
+                    <p id="info"></p>
+                </div>
             </div>
         </div>
     </div>
+    <script src="https://kit.fontawesome.com/5161ba1bb0.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
